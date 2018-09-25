@@ -1,0 +1,406 @@
+body {
+ padding-top: 0px;
+ background-color: #FFF;
+}
+
+.navbar-collapse {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.navbar{ 
+ font-family: 'Jura', sans-serif;
+ background-color: #3F51B5;
+ font-size: 24px;
+ color: #fff;
+}
+
+.navbar-header{
+    max-width: 130px;
+}
+
+.navbar-brand{
+ width: 100%;
+ height: inherit;
+}
+
+.panel-default > .panel-heading {
+ padding: 1px;
+}
+
+/* Photos Carousel */
+#myCarousel{
+ width: 60%;
+ height: auto;
+ margin: 0 auto;
+}
+
+h3 { 
+ font-family: 'Roboto', sans-serif;
+ font-size: 26px;
+ align-items: center;
+ color: #fff;
+}
+
+h2 { 
+ font-family: 'Jura', sans-serif;
+ font-size: 24px;
+ color: white;
+}
+
+h4 { 
+ font-family: 'Audiowide', sans-serif;
+ font-size: 28px;
+}
+
+.table-responsive a {
+ font-family: 'teko', sans-serif;
+ font-size: 22px;
+ color: #EEFF9E;
+}
+
+.table-responsive thead {
+ font-family: 'Roboto', sans-serif;
+ font-size: 22px;
+ color: #EEFF9E;
+}
+
+.text-muted { 
+ font-family: 'Roboto', sans-serif;
+ font-size: 22px;
+ color: #EEFF9E;
+}
+
+.table-responsive .table th { 
+ color: #fff;
+}
+
+.table-responsive .table td { 
+ color: #fff;
+ font-family: 'Roboto', sans-serif;
+ font-size: 18px;
+}
+
+.pull-left {
+ font-family: 'Jura', sans-serif;
+ font-size: 22px;
+ color: darkblue;
+}
+
+.pull-right {
+ font-family: 'Jura', sans-serif;
+ font-size: 22px;
+ color: darkblue;
+}
+
+.box-footer {
+ font-family: 'teko', sans-serif;
+ font-size: 22px;
+ color: #fff;
+}
+
+.lead {
+ font-family: 'Roboto', sans-serif;
+ font-size: 20px;
+ color: #EEFF9E;
+}
+
+.box-simple {
+ font-family: 'teko', sans-serif;
+ font-size: 22px;
+ color: #fff;
+}
+
+form {
+ font-family: 'teko', sans-serif;
+ font-size: 22px;
+ color: #fff;
+}
+
+.blog .content a {
+ font-family: 'Roboto', sans-serif;
+ font-size: 22px;
+ color: #EEFF9E;
+}
+
+p { 
+ font-family: 'Roboto', sans-serif;
+ font-size: 18px;
+}
+
+/*-- Cartes premiere page --*/
+
+.panel-success > .panel-heading {
+    background-image: none;
+    background-color: #3F51B5;
+    color: white;
+
+}
+
+.panel-primary > .panel-heading {
+    background-image: none;
+    background-color: #009688;
+    color: white;
+}
+
+/*-- Cartes 1ere page finit ici --*/
+
+/* VIDEO commence ici */
+.resp-iframe {
+    left: 20%;
+}
+/* Video finit ici */
+
+
+/* Album commence ici */
+
+.album {
+ min-height: 50rem; /* Can be removed */
+ padding-top: 3rem;
+ padding-bottom: 3rem;
+}
+
+.card {
+ float: left;
+ width: 33.333%;
+ padding: .75rem;
+ margin-bottom: 2rem;
+ border: 0;
+}
+
+.card > img {
+ margin-bottom: .75rem;
+}
+
+.card-text {
+ font-size: 85%;
+}
+
+/* Album finit ici */
+
+
+/* Gray Scale Animation -Blog- */
+
+.blog-content img {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%); 
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; 
+}
+
+.blog-content img:hover {
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+}
+
+/* Circle Animation -Accueil- */
+
+.row figure {
+ position: relative;
+}
+.row figure::before {
+ position: absolute;
+ top: 50%;
+ left: 40%;
+ z-index: 2;
+ display: block;
+ content: '';
+ width: 0;
+ height: 0;
+ background: rgba(255,255,255,.2);
+ border-radius: 80%;
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ opacity: 0;
+}
+.row figure:hover::before {
+ -webkit-animation: circle .75s;
+ animation: circle .75s;
+}
+@-webkit-keyframes circle {
+ 0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+} 
+
+/* circle end here*/
+
+
+/*Album ENDS here*/
+
+.footer{
+ background-color:#3F51B5;
+}
+
+.footer i{
+ padding-left: 30px;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* -----------------------------------*/
+
+@media (max-width: 979px) {
+
+.navbar .navbar-header .navbar-brand {
+ padding-right: 20px;
+ font-size: 26px;
+}    
+
+.navbar-collapse {
+    color: #fff;
+    padding-top: 0px;
+}
+    
+.navbar-header{
+ max-width: 150px;
+}
+
+.navbar-brand{
+ width: 90%;
+}
+    
+.navbar{
+ font-family: 'Jura', sans-serif;
+ font-size: 17px;
+}
+
+#myCarousel{
+ width: 70%;
+ height: auto;
+ margin: 0 auto;
+}
+
+h2 { 
+ font-family: 'Jura', sans-serif;
+ font-size: 22px;
+ color: white;
+}    
+    
+p {
+ font-size: 18px;
+}
+    
+/* Tablets */
+
+@media screen and (max-width: 768px) {
+
+.navbar .navbar-header .navbar-brand {
+ padding-right: 10px;
+ font-size: 24px;
+}
+
+.navbar-collapse {
+    color: #fff;
+    padding-top: 0px;
+}
+    
+.navbar-header{
+    max-width: 750px;
+}
+ 
+.navbar-brand{
+ width: 20%;
+}
+
+.navbar{
+ font-family: 'Jura', sans-serif;
+ font-size: 22px;
+}
+    
+#myCarousel{
+ width: 100%;
+}
+    
+h2 { 
+ font-family: 'Jura', sans-serif;
+ font-size: 20px;
+ color: white;
+}
+
+/* ------------- CELLULAIRES ----------------*/
+
+@media screen and (max-width: 480px) {
+
+.navbar .navbar-header .navbar-brand {
+ padding-right: 0px;
+ font-size: 20px;
+}
+
+.navbar-collapse {
+    color: #fff;
+    padding-top: 0px;
+}
+
+.navbar-header{
+    max-width: 440px;
+}
+ 
+.navbar-brand{
+ width: 30%;
+}
+
+    
+.navbar, h3{
+ font-family: 'Jura', sans-serif;
+ font-size: 18px;
+}
+
+#myCarousel{
+ width: 100%;
+}    
+
+h2 { 
+ font-family: 'teko', sans-serif;
+ font-size: 16px;
+ color: white;
+}
+    
+/*--- Video commence ici --*/
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Video finit ici */
+    
+.footer .fa{
+  display: none !important;
+  visibility: hidden !important;
+}
